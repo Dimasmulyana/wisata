@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">poland</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="wisata.html">beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kegiatan.html">kegiatan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galery.html">galery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tentang kami.html">Tentang Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <div class="container mt-4">
+        <h1 style="text-align: center;">Kontak Kami</h1><br><br>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Formulir Pendaftaran</h2>
+                <form action="/submit" method="POST">
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama:</label>
+                        <input type="text" id="nama" name="nama" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username:</label>
+                        <input type="text" id="username" name="username" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" id="password" name="password" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="alamat" class="form-label">Alamat:</label>
+                        <input type="text" id="alamat" name="alamat" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="no_telepon" class="form-label">Nomor Telepon:</label>
+                        <input type="tel" id="no_telepon" name="no_telepon" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <span class="form-label">Jenis Kelamin:</span><br>
+                        <label>
+                            <input type="radio" name="jenis_kelamin" value="Pria" required> Pria
+                        </label><br>
+                        <label>
+                            <input type="radio" name="jenis_kelamin" value="Wanita" required> Wanita
+                        </label>
+                    </div>
+                    <div class="mb-3">
+                        <label for="kegiatan" class="form-label">Pilih Kegiatan:</label>
+                        <select id="kegiatan" name="kegiatan" class="form-select" required>
+                            <option value="Seni">camping</option>
+                            <option value="Musik">trekking</option>
+                            <option value="Sains">strolling</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Destinasi yang Dikunjungi:</label><br>
+                        <label>
+                            <input type="checkbox" name="destinasi[]" value="Gunung"> Gunung
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="destinasi[]" value="Kota"> Kota
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="destinasi[]" value="Desa"> Kastil
+                        </label>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Kirim</button>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <h2>Masukan Saran & Kritik</h2>
+                <form action="/submit-feedback" method="POST">
+                    <div class="mb-3">
+                        <label for="feedback-nama" class="form-label">Nama:</label>
+                        <input type="text" id="feedback-nama" name="feedback-nama" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="feedback-email" class="form-label">Email:</label>
+                        <input type="email" id="feedback-email" name="feedback-email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="feedback-komentar" class="form-label">Komentar:</label>
+                        <textarea id="feedback-komentar" name="feedback-komentar" class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Kirim</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <h1 style="text-align: center;">Lokasi Kantor Kami</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.352796920442!2d144.96305831531614!3d-37.812275979751664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f3e7b5ab%3A0x4b79ed40c05335e!2s1%20Spring%20Street%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sin!4v1693659601236!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br><br>
+
+
+    <h2>Rekomendasi seru</h2>
+<p>Kami menyediakan berbagai pilihan kegiatan rekreasi <br>untuk keluarga dan teman-teman. Nikmati liburan tak <br>terlupakan bersama kami!</p>
+
+
+    <footer style="background-color: black; color: white; padding: 20px; text-align: center;">
+        
+        <nav>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 15px;">
+                <li><a href="#home" style="text-decoration: none; color: white;">Beranda</a></li>
+                <li><a href="#services" style="text-decoration: none; color: white;">galery</a></li>
+                <li><a href="#about" style="text-decoration: none; color: white;">Tentang Kami</a></li>
+                <li><a href="#contact" style="text-decoration: none; color: white;">Kontak</a></li>
+            </ul>
+        </nav>
+        <div>
+            <p>&copy; 2024 Rekomendasiwisata. Semua Hak Dilindungi.</p>
+            <p>Alamat: jln No. 123, bandung, polandia</p>
+            <p>Email: <a href="mailto:info@example.com" style="text-decoration: none; color: white;">info@example.com</a></p>
+        </div>
+    </footer>
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</body>
+</html>
